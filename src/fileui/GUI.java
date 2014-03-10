@@ -257,7 +257,6 @@ public class GUI extends JFrame {
                                 ls(channelsftp.pwd());
                             } catch (SftpException ex) {
                                 menu_view.status_lb.setText(ex.getMessage());
-                                ex.printStackTrace();
                             }
                             if (!stopper.isRunning()) {
                                 stopper.start();
@@ -288,7 +287,6 @@ public class GUI extends JFrame {
 
                     } catch (SftpException ex) {
                         menu_view.status_lb.setText(ex.getMessage());
-                        ex.printStackTrace();
                     }
                     if (!stopper.isRunning()) {
                         stopper.start();
@@ -319,7 +317,6 @@ public class GUI extends JFrame {
                                 ls(channelsftp.pwd());
                             } catch (SftpException ex) {
                                 menu_view.status_lb.setText(ex.getMessage());
-                                ex.printStackTrace();
                             }
                             if (!stopper.isRunning()) {
                                 stopper.start();
@@ -349,7 +346,6 @@ public class GUI extends JFrame {
                             }
                         } catch (SftpException ex) {
                             menu_view.status_lb.setText(ex.getMessage());
-                            ex.printStackTrace();
                             if (!stopper.isRunning()) {
                                 stopper.start();
                             }
@@ -532,7 +528,6 @@ public class GUI extends JFrame {
                                 }
                             } catch (SftpException ex) {
                                 menu_view.status_lb.setText(ex.getMessage());
-                                ex.printStackTrace();
                             }
                         }
                     }).start();
@@ -560,7 +555,6 @@ public class GUI extends JFrame {
                                     }
                                 } catch (SftpException ex) {
                                     menu_view.status_lb.setText(ex.getMessage());
-                                    ex.printStackTrace();
                                 }
                             }
                         }).start();
@@ -613,11 +607,9 @@ public class GUI extends JFrame {
                                 channelsftp.cd(working_directory_backup);
                             } catch (SftpException ex1) {
                                 menu_view.status_lb.setText(ex.getMessage());
-                                ex.printStackTrace();
                             }
 
                             menu_view.status_lb.setText(ex.getMessage());
-                            ex.printStackTrace();
                             if (!stopper.isRunning()) {
                                 stopper.start();
                             }

@@ -1,4 +1,4 @@
-File-UI
-=======
+What needs to add
 
-A graphic file transferring client with Java Swing
+store pwd on a stack when doing any get, put rm, ls...
+	scenario
