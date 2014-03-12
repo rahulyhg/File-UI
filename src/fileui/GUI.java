@@ -166,7 +166,7 @@ public class GUI extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
 
-                if (channelsftp.isConnected() && channel.isConnected()) {
+                if (channelsftp != null && channelsftp.isConnected() && channel.isConnected()) {
                     int choice = JOptionPane.showConfirmDialog(null, "Log out", "", JOptionPane.YES_NO_OPTION, JOptionPane.WARNING_MESSAGE);
 
                     //didnt really log out yet
