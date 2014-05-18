@@ -14,4 +14,4 @@ Installation guide
 4) Add, commit, push
 
 Visit FileUI webpage for more info
-https://www.cs.drexel.edu/~qy44/FileUI/
+https://www.cs.drexel.edu/~qy44/fileui/
